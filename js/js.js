@@ -23,8 +23,8 @@ $("#boas-vindas").html(" Bom Dia!");
 falt_h = (12 - hora);
 //converto o horario calculado anteriormente em minutos
 hora_min = (falt_h * 60);
-//subtraiu os (horarios que restam convertidos em minutos - os minutos atuais) -0.1 antes do programa ler novamente o algoritmo.
-min_hora_min = ((hora_min - min_atual) - 0.1);
+//subtraiu os (horarios que restam convertidos em minutos - os minutos atuais).
+min_hora_min = (hora_min - min_atual);
 //passo para a variavel os minutos convertidos em milissegundos para setar na função setTimeout.
 h_mil = (min_hora_min * 60000);
 }
@@ -33,7 +33,7 @@ if(hora >= 12 && hora < 18){
 $("#boas-vindas").html(" Boa Tarde!");
 falt_h = (18 - hora);
 hora_min = (falt_h * 60);
-min_hora_min = ((hora_min - min_atual) - 0.1);
+min_hora_min = (hora_min - min_atual);
 h_mil = (min_hora_min * 60000);
 }
 //mesmo exemplo da condição anterior
@@ -41,7 +41,7 @@ if(hora >= 18 && hora < 24){
 $("#boas-vindas").html(" Boa Noite!");
 falt_h = (24 - hora);
 hora_min = (falt_h * 60);
-min_hora_min = ((hora_min - min_atual) - 0.1);
+min_hora_min = (hora_min - min_atual);
 h_mil = (min_hora_min * 60000);
 }
 //função que fara com que recarregue a pagina que recebera a variavel com valor dos milissegundos que restam para chegar no horario especifico
