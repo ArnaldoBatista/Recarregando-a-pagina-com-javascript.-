@@ -1,9 +1,3 @@
-/* == Por favor não peço nenhum tipo de retribuição apenas que deixe este comentário,
-   == referente aos créditos do autor boa sorte a todos.
-   == Email: arnaldo.1565@hotmail.com
-   == GitHub: ArnaldoBR.
-*/
-
 let data = new Date();
 //horário local
 let hora = data.getHours();
